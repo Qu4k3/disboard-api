@@ -4,20 +4,18 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
+app.disable('x-powered-by');
 
-// cargar rutas
+// load routes
+var team_routes = require('./routes/team');
 
 // body-parser
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-// Configurar CORS
+// CORS settings
 
-// rutas
-app.get('/pruebas-api', (req, res) => {
-    res.status(200).send({
-        message: 'Esta ruta es de prueba'
-    })
-})
+// routes
+app.use('/api', team_routes);
 
 module.exports = app;
