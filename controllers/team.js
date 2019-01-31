@@ -32,13 +32,13 @@ function saveTeam(req, res) {
         });
     } else {
         res.status(200).send({
-            message: 'name and tag are required fields'
+            message: '*name* and *tag* are required fields'
         })
     }
 }
 
 function getTeams(req, res){
-    Team.find({}).exec((err, teams) => {
+    Team.find({}, {'_id': 0}).exec((err, teams) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
@@ -60,7 +60,7 @@ function getTeams(req, res){
 function getTeam(req, res){
     var teamId = req.params.id;
 
-    Team.findById(teamId).exec((err, team) => {
+    Team.findById(teamId, {'_id': 0}).exec((err, team) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
