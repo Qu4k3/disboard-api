@@ -1,7 +1,7 @@
 {
   "name": "api_nodejs",
   "version": "1.0.0",
-  "description": "API REST en nodejs",
+  "description": "Disboard API REST en nodejs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
