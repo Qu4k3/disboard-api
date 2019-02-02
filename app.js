@@ -20,4 +20,8 @@ app.use(bodyParser.json());
 app.use('/api', team_routes);
 app.use('/api', player_routes);
 
+app.get('/', function (req, res) {
+    res.render('views/index');
+});
+
 module.exports = app;
