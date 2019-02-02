@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 var app = require('./app');
-var port = 3800;
+var port = 8080;
 require('dotenv').config();
 
 var db_user = process.env.DB_USER;
@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name
     console.log('Conexión a MongoDB se ha realizado correctamente.');
 
     app.listen(port, () => {
-        console.log('Server started at localhost:3800');
+        console.log('Server started at localhost:8080');
     });
 }).catch(err => console.log(err));
 
