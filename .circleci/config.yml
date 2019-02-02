@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  buld:
+    working_dir: ~/tmp
+    docker:
+      - image: circle/node:10
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm start
