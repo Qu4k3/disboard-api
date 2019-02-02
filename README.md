@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541225512459042818/tet_github.png">
+    <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541288577846214666/shuvi-rounded.gif">
 </p>
 
 ## About
@@ -21,7 +21,10 @@ Project hosted in Heroku.
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/Qu4k3/disboard-api-nodejs.git`
+Clone this repo to your local machine using
+```shell
+$ git clone https://github.com/Qu4k3/disboard-api-nodejs.git
+```
 
 ### Setup
 
@@ -34,7 +37,7 @@ $ npm install
 
 > run `npm dev` or `npm start` to start the application
 
-`dev` uses nodemon to update the project each time a file is modified
+`npm dev` uses nodemon to update the project each time a file is modified
 
 ```shell
 $ npm dev
