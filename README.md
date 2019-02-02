@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541288577846214666/shuvi-rounded.gif">
+    <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541292155138736161/shuvi-rounded.gif">
 </p>
 
 ## About
