@@ -35,12 +35,12 @@ $ git clone https://github.com/Qu4k3/disboard-api-nodejs.git
 $ npm install
 ```
 
-> run `npm dev` or `npm start` to start the application
+> run `npm run start-watch` or `npm start` to start the application
 
-`npm dev` uses nodemon to update the project each time a file is modified
+`start-watch` uses nodemon to update the project each time a file is modified
 
 ```shell
-$ npm dev
+$ npm npm run start-watch
 or
 $ npm start
 ```

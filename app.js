@@ -17,11 +17,11 @@ app.use(bodyParser.json());
 // CORS settings
 
 // routes
-app.use('/api', team_routes);
-app.use('/api', player_routes);
+app.use('', team_routes);
+app.use('', player_routes);
 
 app.get('/', function (req, res) {
-    res.render('views/index');
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 module.exports = app;
