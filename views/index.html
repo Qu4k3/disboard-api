@@ -3,8 +3,7 @@
   <head>
     <title>Disboard API</title>
     <meta name="description" content="Disboard API" />
-    <link id="favicon" rel="icon" href="https://cdn.discordapp.com/attachments/503303753705848838/541347404813828098/favicon.ico" type="image/x-icon"
-    />
+    <link id="favicon" rel="icon" href="https://cdn.discordapp.com/attachments/503303753705848838/541347404813828098/favicon.ico" type="image/x-icon" />
     <meta charset="utf-8" />
     <meta name="theme-color" content="#A61A5E" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +19,6 @@
       * {
         box-sizing: border-box;
       }
-
       body {
         font-family: "Benton Sans", "Helvetica Neue", helvetica, arial,
           sans-serif;
@@ -30,7 +28,6 @@
         width: 100%;
         height: 100%;
       }
-
       main {
         width: calc(100% - 30px);
         margin: 0 auto;
@@ -39,29 +36,24 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
-
       img {
         display: block;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
       }
-
       .wrapper {
         margin-top: 25px;
       }
-
       .badge {
         padding: 6px 12px 6px 24px;
         background-color: rgba(0, 0, 0, 0.85);
         display: inline-block;
         border-radius: 15px;
       }
-
       .badge > span {
         position: relative;
       }
-
       .badge > span:before {
         content: "\2022";
         position: absolute;
@@ -70,12 +62,17 @@
         left: -14px;
         font-size: 24px;
       }
+      @media (max-width: 600px) {
+        .badge > span:before {
+            top: -3px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <main>
-      <img alt="disboard api" src="https://cdn.discordapp.com/attachments/503303753705848838/541292155138736161/shuvi-rounded.gif" />
+      <img alt="disboard api" src="https://cdn.discordapp.com/attachments/503303753705848838/541409603255009291/shuvi-white.gif" />
       <div class="wrapper">
         <div class="badge">
           <span>online</span>
