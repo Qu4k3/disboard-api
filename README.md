@@ -40,7 +40,7 @@ $ npm install
 `start-watch` uses nodemon to update the project each time a file is modified
 
 ```shell
-$ npm npm run start-watch
+$ npm run start-watch
 or
 $ npm start
 ```
