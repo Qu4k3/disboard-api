@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name
     console.log('Conexión a MongoDB se ha realizado correctamente.');
 
     app.listen(process.env.PORT || port, () => {
-        console.log('Server started at localhost:'+process.env.PORT || port);
+        console.log('Server started at localhost:'+(process.env.PORT || port));
     });
 }).catch(err => console.log(err));
 

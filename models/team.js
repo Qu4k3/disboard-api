@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var TeamSchema = Schema({
+    id: Number,
     team_name: String,
     team_tag: String,
     team_logo: String,
