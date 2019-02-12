@@ -8,7 +8,7 @@ function saveTeam(req, res) {
     var params = req.body;
 
     if(params.name && params.tag){
-        team.team_id = params.id;
+        //team.team_id = params.id;
         team.team_name = params.name;
         team.team_tag = params.tag;
         team.team_logo = params.logo;
@@ -61,7 +61,7 @@ function getTeams(req, res){
 function getTeam(req, res){
     var teamId = req.params.id;
 
-    Team.find({'team_id':teamId}, {'_id': 0}).exec((err, team) => {
+    Team.findById(teamId, {'_id': 0}).exec((err, team) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
@@ -84,7 +84,7 @@ function updateTeam(req, res){
     var teamId = req.params.id;
     var update = req.body;
 
-    Team.findAndUpdate({'team_id':teamId}, update, {new:true}, (err, teamUpdated) => {
+    Team.findByIdAndUpdate(teamId, update, {new:true}, (err, teamUpdated) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
@@ -106,7 +106,7 @@ function updateTeam(req, res){
 function deleteTeam(req, res) {
     var teamId = req.params.id;
 
-    Team.findAndRemove({'team_id':teamId}, (err, teamRemoved) => {
+    Team.findByIdAndRemove(teamId, (err, teamRemoved) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
