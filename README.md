@@ -23,7 +23,7 @@ Project hosted in Heroku.
 
 Clone this repo to your local machine using
 ```shell
-$ git clone https://github.com/Qu4k3/disboard-api-nodejs.git
+$ git clone https://github.com/Qu4k3/disboard-api.git
 ```
 
 ### Setup
@@ -35,12 +35,12 @@ $ git clone https://github.com/Qu4k3/disboard-api-nodejs.git
 $ npm install
 ```
 
-> run `npm run start-watch` or `npm start` to start the application
+> run `npm run dev` or `npm start` to start the application
 
-`start-watch` uses nodemon to update the project each time a file is modified
+`dev` uses nodemon to update the project each time a file is modified
 
 ```shell
-$ npm run start-watch
+$ npm run dev
 or
 $ npm start
 ```

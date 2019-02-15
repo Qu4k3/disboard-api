@@ -1,13 +1,14 @@
 {
-  "name": "api_nodejs",
+  "name": "shuvi",
   "version": "1.0.0",
-  "description": "Disboard API REST en nodejs",
+  "description": "Disboard API REST",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-watch": "nodemon index.js",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
+  "repository": "github:Qu4k3/disboard-api",
   "author": "Qu4k3",
   "license": "ISC",
   "dependencies": {
