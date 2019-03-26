@@ -1,7 +1,9 @@
 module.exports = {
-    title: 'API Docs',
-    description: 'Disboard API Documentation',
+    title: 'Disboard',
+    description: 'Disboard Project & API Documentation',
+    base: "/disboard-api/",
     themeConfig: {
+        logo: 'https://cdn.discordapp.com/attachments/503303753705848838/541348199789625393/shuvi-rounded.gif',
         repo: 'Qu4k3/disboard-api',
         repoLabel: 'Github',
         docsRepo: 'Qu4k3/disboard-api',
@@ -9,9 +11,16 @@ module.exports = {
         docsBranch: 'master',
         editLinks: true,
         editLinkText: 'Hacer una modificación',
-        sidebar: [
-            '/',
-            'teams'
-          ]
-    }
+        sidebar: {
+            '/': [
+                '',
+                'api'
+            ]
+        },
+        displayAllHeaders: true,
+        footer: "Ⓒ Disboard"
+    },
+    head: [
+        ['link', { rel: "icon", href: "/favicon.ico" }]
+      ]
   }

@@ -1,4 +1,4 @@
-# About
+# Info
 
 <p align="center">
     <img src="https://circleci.com/gh/Qu4k3/disboard-api.svg?style=svg&circle-token=c1aea5451e8ad018851e45c477d8f4112b7ebfb4" />&nbsp;
