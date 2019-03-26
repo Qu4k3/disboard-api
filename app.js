@@ -9,6 +9,7 @@ app.disable('x-powered-by');
 // load routes
 var team_routes = require('./routes/team');
 var player_routes = require('./routes/player');
+var war_routes = require('./routes/war');
 var discord_routes = require('./routes/discord');
 
 // body-parser
@@ -35,6 +36,7 @@ app.use(function (req, res, next) {
 // routes
 app.use('', team_routes);
 app.use('', player_routes);
+app.use('', war_routes);
 app.use('/discord', discord_routes);
 
 app.get('/', function (req, res) {

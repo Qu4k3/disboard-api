@@ -21,7 +21,7 @@ function getWars(req, res){
         }
     });
 }
-
+/*
 function getWar(req, res){
     var warId = req.params.id;
 
@@ -42,9 +42,8 @@ function getWar(req, res){
             }
         }
     });
-}
+}*/
 
 module.exports = {
-    getWars,
-    getWar
+    getWars
 }

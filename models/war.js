@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var PlayerSchema = Schema({
+var WarSchema = Schema({
     played_at: Date,
     game: {name: String, mode: String},
     type: String,
@@ -12,4 +12,4 @@ var PlayerSchema = Schema({
     away_team: {team: String, score: Number, penality: Number, players: [{player: String, score: Number}]}
 });
 
-module.exports = mongoose.model('Player', PlayerSchema);
+module.exports = mongoose.model('War', WarSchema);
