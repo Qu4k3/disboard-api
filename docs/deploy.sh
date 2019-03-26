@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # abort on errors
 set -e
 
@@ -5,7 +7,7 @@ set -e
 npm run docs:build
 
 # navigate into the build output directory
-cd dist
+cd docs/.vuepress/dist
 
 # if you are deploying to a custom domain
 echo 'docs.disboard.team' > CNAME
