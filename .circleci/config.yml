@@ -20,6 +20,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
+          name: docs:build
+          command: npm run docs:build
+      - run:
           name: start
           command: npm start
       - store_artifacts: 
