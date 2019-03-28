@@ -17,8 +17,7 @@ module.exports = {
                 'api'
             ]
         },
-        displayAllHeaders: true,
-        footer: "Ⓒ Disboard"
+        displayAllHeaders: true
     },
     head: [
         ['link', { rel: "icon", href: "/favicon.ico" }]
