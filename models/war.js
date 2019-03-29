@@ -1,9 +1,14 @@
 'use strict'
 
 var mongoose = require('mongoose');
+const shortid = require('shortid');
 var Schema = mongoose.Schema;
 
 var WarSchema = Schema({
+    war_id: {
+        'type': String,
+        'default': shortid.generate
+    },
     played_at: Date,
     game: {name: String, mode: String},
     type: String,
