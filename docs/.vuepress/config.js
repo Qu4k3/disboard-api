@@ -9,12 +9,19 @@ module.exports = {
         docsRepo: 'Qu4k3/disboard-api',
         docsDir: 'docs',
         docsBranch: 'master',
-        editLinks: true,
+        editLinks: false,
         editLinkText: 'Hacer una modificación',
+        nav: [
+            { text: 'Website', link: '/web.html' },
+            { text: 'API', link: '/api.html' },
+            { text: 'Bot', link: '/bot.html' },
+          ],
         sidebar: {
             '/': [
                 '',
-                'api'
+                'api',
+                'web',
+                'bot'
             ]
         },
         displayAllHeaders: true

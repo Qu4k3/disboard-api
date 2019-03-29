@@ -13,7 +13,7 @@ const redirect = encodeURIComponent('http://localhost:3800/discord/callback');
 var api = express.Router();
 
 api.get('/login', (req, res) => {
-    res.redirect(`https://discordapp.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=identify&response_type=code&redirect_uri=${redirect}`);
+    res.redirect(`https://discordapp.com/oauth2/authorize?client_id=${CLIENT_ID}&scope=identify%20email%20guilds&response_type=code&redirect_uri=${redirect}`);
 });
 
 api.get('/callback', catchAsync(async (req, res) => {

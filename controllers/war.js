@@ -21,11 +21,11 @@ function getWars(req, res){
         }
     });
 }
-/*
+
 function getWar(req, res){
     var warId = req.params.id;
 
-    War.findOne({'discord.unique_id': warId}, {'_id': 0}).exec((err, war) => {
+    War.findById(warId, {'_id': 0}).exec((err, war) => {
         if(err) {
             res.status(500).send({
                 message: 'Server error'
@@ -42,8 +42,9 @@ function getWar(req, res){
             }
         }
     });
-}*/
+}
 
 module.exports = {
-    getWars
+    getWars,
+    getWar
 }

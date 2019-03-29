@@ -1,4 +1,4 @@
-# Info
+# About
 
 <p align="center">
     <img src="https://circleci.com/gh/Qu4k3/disboard-api.svg?style=svg&circle-token=c1aea5451e8ad018851e45c477d8f4112b7ebfb4" />&nbsp;
@@ -9,6 +9,8 @@
     <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541409603255009291/shuvi-white.gif">
 </p>
 
-## Proyecto desarrollado para...
+### About
 
-lorem ipsum dolor amet
+API made in nodejs connected through mongoose to a mongodb database hosted in a mongodb Atlas cluster.
+
+Project hosted in Heroku.
