@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Disboard',
     description: 'Disboard Project & API Documentation',
-    base: "/disboard-api/",
+    base: "/",
     themeConfig: {
         logo: 'https://cdn.discordapp.com/attachments/503303753705848838/541348199789625393/shuvi-rounded.gif',
         repo: 'Qu4k3/disboard-api',
