@@ -27,7 +27,8 @@ Project hosted in Heroku.
 - dotenv - [docs](https://github.com/motdotla/dotenv)
 - mongoose
 - nanoid - [docs](https://github.com/ai/nanoid)
-- node-fetch
+
+#### Other
 
 - nodemon
 - vuepress - [docs](https://vuepress.vuejs.org/guide/)
