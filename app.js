@@ -40,23 +40,22 @@ app.use('', war_routes);
 app.use('/discord', discord_routes);
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/views/index.html');
+  res.sendFile(__dirname + '/views/index.html');
 });
 
-
 app.use((err, req, res, next) => {
-    switch (err.message) {
-      case 'NoCodeProvided':
-        return res.status(400).send({
-          status: 'ERROR',
-          error: err.message,
-        });
-      default:
-        return res.status(500).send({
-          status: 'ERROR',
-          error: err.message,
-        });
-    }
-  });
+  switch (err.message) {
+    case 'NoCodeProvided':
+      return res.status(400).send({
+        status: 'ERROR',
+        error: err.message,
+      });
+    default:
+      return res.status(500).send({
+        status: 'ERROR',
+        error: err.message,
+      });
+  }
+});
 
 module.exports = app;
