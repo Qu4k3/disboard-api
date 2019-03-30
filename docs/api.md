@@ -36,8 +36,6 @@ Project hosted in Heroku.
 #### Other
 
 - nodemon
-- vuepress - [docs](https://vuepress.vuejs.org/guide/)
-- webpack-dev-middleware
 
 ## Players
 

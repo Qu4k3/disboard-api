@@ -5,3 +5,20 @@
 </p>
 
 ### About
+
+Documentation that covers everything related to the disboard project
+
+### Used
+
+- Nodejs
+- VuePress
+- Netlify deploy/hosting - [site](https://www.netlify.com)
+
+### Dependencies
+
+- vuepress
+- webpack-dev-middleware _(v 3.6.0)_
+
+### Repository
+
+[https://github.com/Qu4k3/disboard-docs](https://github.com/Qu4k3/disboard-docs)
