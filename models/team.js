@@ -1,13 +1,17 @@
 'use strict'
 
 var mongoose = require('mongoose');
-const shortid = require('shortid');
+const generate = require('nanoid/generate');
+const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 var Schema = mongoose.Schema;
+
+mongoose.set('useCreateIndex', true)
 
 var TeamSchema = Schema({
     team_id: {
-        'type': String,
-        'default': shortid.generate
+        type: String,
+        default: () => generate(alphabet, 8),
+        unique: true
     },
     team_name: String,
     team_tag: String,

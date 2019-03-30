@@ -1,7 +1,6 @@
 'use strict'
 
 var mongoose = require('mongoose');
-const shortid = require('shortid');
 var app = require('./app');
 var port = 3800;
 require('dotenv').config();
