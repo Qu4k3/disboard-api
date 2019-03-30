@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 const generate = require('nanoid/generate');
-const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const config = require('./../config.json');
 var Schema = mongoose.Schema;
 
 mongoose.set('useCreateIndex', true)
@@ -10,7 +10,7 @@ mongoose.set('useCreateIndex', true)
 var TeamSchema = Schema({
     team_id: {
         type: String,
-        default: () => generate(alphabet, 8),
+        default: () => generate(config.nanoid.alphabet, config.nanoid.id_length),
         unique: true
     },
     team_name: String,

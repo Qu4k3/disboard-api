@@ -16,18 +16,32 @@ Project hosted in Heroku.
 ## Used
 
 - Nodejs
+
+### Dependencies
+
 - Express
-- dotenv - [site](https://github.com/motdotla/dotenv)
+- body-parser
+- btoa
+- dotenv - [docs](https://github.com/motdotla/dotenv)
 - mongoose
+- nanoid - [docs](https://github.com/ai/nanoid)
+- node-fetch
+
+- nodemon
+- vuepress - [docs](https://vuepress.vuejs.org/guide/)
+- webpack-dev-middleware
+
+### Other
+
 - MongoDB Atas Cluster
-- Heroku hosting - [site](https://heroku.com)
+- Heroku hosting
 
 ## Installation
 
 ### Clone
 
 Clone this repo to your local machine using
-```shell
+``` shell
 $ git clone https://github.com/Qu4k3/disboard-api.git
 ```
 

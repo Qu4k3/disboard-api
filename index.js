@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 var app = require('./app');
-var port = 3800;
+const config = require('./config.json');
 require('dotenv').config();
 
 var db_user = process.env.DB_USER;
@@ -14,8 +14,8 @@ mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name
 .then(() => {
     console.log('Conexión a MongoDB se ha realizado correctamente.');
 
-    app.listen(process.env.PORT || port, () => {
-        console.log('Server started at localhost:'+(process.env.PORT || port));
+    app.listen(process.env.PORT || config.app.port, () => {
+        console.log('Server started at localhost:'+(process.env.PORT || config.app.port));
     });
 }).catch(err => console.log(err));
 

@@ -2,13 +2,16 @@
 
 var mongoose = require('mongoose');
 const generate = require('nanoid/generate');
-const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const config = require('./../config.json');
 var Schema = mongoose.Schema;
+
+mongoose.set('useCreateIndex', true)
 
 var WarSchema = Schema({
     war_id: {
-        'type': String,
-        'default': () => generate(alphabet, 8)
+        type: String,
+        default: () => generate(config.nanoid.alphabet, config.nanoid.id_length),
+        unique: true
     },
     played_at: Date,
     game: {name: String, mode: String},
