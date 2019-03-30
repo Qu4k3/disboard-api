@@ -16,6 +16,8 @@ Project hosted in Heroku.
 ## Used
 
 - Nodejs
+- MongoDB Atas Cluster
+- Heroku hosting
 
 ### Dependencies
 
@@ -31,17 +33,12 @@ Project hosted in Heroku.
 - vuepress - [docs](https://vuepress.vuejs.org/guide/)
 - webpack-dev-middleware
 
-### Other
-
-- MongoDB Atas Cluster
-- Heroku hosting
-
 ## Installation
 
 ### Clone
 
 Clone this repo to your local machine using
-``` shell
+```shell
 $ git clone https://github.com/Qu4k3/disboard-api.git
 ```
 

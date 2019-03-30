@@ -1,3 +1,0 @@
-# Bot
-
-Lorem ipsum
