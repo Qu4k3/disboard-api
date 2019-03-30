@@ -3,7 +3,7 @@ module.exports = {
     description: 'Disboard Project & API Documentation',
     base: "/",
     themeConfig: {
-        logo: 'https://cdn.discordapp.com/attachments/503303753705848838/541348199789625393/shuvi-rounded.gif',
+        logo: 'https://cdn.discordapp.com/attachments/503303753705848838/561619188687568916/jibril_square.jpg',
         repo: 'Qu4k3/disboard-api',
         repoLabel: 'Github',
         docsRepo: 'Qu4k3/disboard-api',
