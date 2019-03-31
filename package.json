@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "start": "node index.js"
   },
   "repository": "github:Qu4k3/disboard-api",
   "author": "Qu4k3",
@@ -24,7 +22,5 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
-    "vuepress": "^0.14.10",
-    "webpack-dev-middleware": "^3.6.0"
   }
 }
