@@ -7,7 +7,7 @@
     <img width="250" height="300" src="https://cdn.discordapp.com/attachments/503303753705848838/541409603255009291/shuvi-white.gif">
 </p>
 
-## About
+# Disboard API
 
 API made in nodejs connected through mongoose to a mongodb database hosted in a mongodb Atlas cluster.
 
@@ -27,20 +27,16 @@ Project hosted in Heroku.
 - dotenv - [docs](https://github.com/motdotla/dotenv)
 - mongoose
 - nanoid - [docs](https://github.com/ai/nanoid)
-
-#### Other
-
 - nodemon
-- vuepress - [docs](https://vuepress.vuejs.org/guide/)
-- webpack-dev-middleware
 
 ## Installation
 
 ### Clone
 
 Clone this repo to your local machine using
+
 ```shell
-$ git clone https://github.com/Qu4k3/disboard-api.git
+git clone https://github.com/Qu4k3/disboard-api.git
 ```
 
 ### Setup
@@ -48,12 +44,21 @@ $ git clone https://github.com/Qu4k3/disboard-api.git
 > run `npm install` to install all the dependencies
 
 ```shell
-$ npm install
+npm install
 ```
 
 This API uses a `.env` file
 
 The `.env` variables you will need to supply are
+
+```shell
+DB_USER=
+DB_PASS=
+DB_CLUSTER=
+DB_NAME=
+CLIENT_ID=
+CLIENT_SECRET=
+```
 
 | Name            | Use                                            |
 |:----------------|:-----------------------------------------------|
