@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
   }
   //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   // Request methods you wish to allow
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS'); // GET, POST, OPTIONS, PUT, PATCH, DELETE
+  res.setHeader('Access-Control-Allow-Methods', 'GET'); // GET, POST, OPTIONS, PUT, PATCH, DELETE
   // Request headers you wish to allow
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   // Set to true if you need the website to include cookies in the requests sent
