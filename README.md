@@ -47,7 +47,7 @@ git clone https://github.com/Qu4k3/disboard-api.git
 npm install
 ```
 
-This API uses a `.env` file
+This project uses a `.env` file
 
 The `.env` variables you will need to supply are
 
@@ -71,7 +71,7 @@ CLIENT_SECRET=
 
 > run `npm run dev` or `npm start` to start the application
 
-`dev` uses nodemon to update the project each time a file is modified
+`dev` runs nodemon to update the project each time a file is modified
 
 ```shell
 $ npm run dev
