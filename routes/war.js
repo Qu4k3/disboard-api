@@ -7,7 +7,7 @@ var api = express.Router();
 
 //api.post('/war', WarController.saveWar);
 api.get('/wars', WarController.getWars);
-api.get('/war/:id', WarController.getWar);
+api.get('/wars/:id', WarController.getWar);
 //api.put('/war/:id', WarController.updateWar);
 //api.delete('/war/:id', WarController.deleteWar);
 

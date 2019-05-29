@@ -5,10 +5,10 @@ var TeamController = require('../controllers/team');
 
 var api = express.Router();
 
-api.post('/team', TeamController.saveTeam);
+api.post('/teams', TeamController.saveTeam);
 api.get('/teams', TeamController.getTeams);
-api.get('/team/:id', TeamController.getTeam);
-api.put('/team/:id', TeamController.updateTeam);
-api.delete('/team/:id', TeamController.deleteTeam);
+api.get('/teams/:id', TeamController.getTeam);
+api.put('/teams/:id', TeamController.updateTeam);
+api.delete('/teams/:id', TeamController.deleteTeam);
 
 module.exports = api;
