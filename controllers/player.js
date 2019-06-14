@@ -23,25 +23,39 @@ function getPlayers(req, res){
 }
 
 function getPlayer(req, res){
-    var playerDiscordId = req.params.id;
+    var playerId = req.params.id;
+    var searchBy;
 
-    Player.findOne({'discord.unique_id': playerDiscordId}, {'_id': 0}).exec((err, player) => {
-        if(err) {
-            res.status(500).send({
-                message: 'Server error'
-            })
+    if (playerId.length < 8 || playerId.length > 8 && playerId.length < 18 || playerId.length.length > 18) {
+        res.status(500).send({
+            message: 'Incorrect ID format'
+        })
+    } else {
+        if (playerId.length == 8) {
+            searchBy = {'player_id': playerId};
         } else {
-            if(player){
-                res.status(200).send({
-                    player
-                });
-            } else {
-                res.status(404).send({
-                    message: 'Player not found'
+            searchBy = {'discord.unique_id': playerId};
+        }    
+
+        Player.findOne(searchBy, {'_id': 0}).exec((err, player) => {
+            if(err) {
+                res.status(500).send({
+                    message: 'Server error'
                 })
+            } else {
+                if(player){
+                    res.status(200).send({
+                        player
+                    });
+                } else {
+                    res.status(404).send({
+                        message: 'Player not found'
+                    })
+                }
             }
-        }
-    });
+        });
+    }
+    
 }
 
 module.exports = {

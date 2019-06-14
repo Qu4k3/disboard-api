@@ -15,9 +15,28 @@ var PlayerSchema = Schema({
     },
     player_name: String,
     player_team: String,
-    country: {name: String, code: String},
-    player_registry: [{role: String, in: Date, out: Date}],
-    discord: {unique_id: String, user_tag: String, avatar_url: String,roles:[{role: String, role_color: String}]},
+    country: {
+        name: String,
+        code: String
+    },
+    player_registry: [
+        {
+            role: String,
+            in: Date,
+            out: Date
+        }
+    ],
+    discord: {
+        unique_id: String,
+        user_tag: String,
+        avatar_url: String,
+        roles:[
+            {
+                role: String,
+                role_color: String
+            }
+        ]
+    },
     switch_fc: String,
     mkc_player_profile: String
 });
