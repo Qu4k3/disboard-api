@@ -69,6 +69,8 @@ CLIENT_SECRET=
 | `CLIENT_ID`     | Discord App ID |
 | `CLIENT_SECRET` | Discord App Secret |
 
+### Build and run
+
 > run `npm run dev` or `npm start` to start the application
 
 `dev` runs nodemon to update the project each time a file is modified
