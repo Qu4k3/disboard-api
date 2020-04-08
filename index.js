@@ -10,9 +10,14 @@ var db_pass = process.env.DB_PASS;
 var db_cluster = process.env.DB_CLUSTER;
 var db_name = process.env.DB_NAME;
 
-mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name+'?retryWrites=true&', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name+'?retryWrites=true&',
+{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+})
 .then(() => {
-    console.log('Conexión a MongoDB se ha realizado correctamente.');
+    console.log('Connection to database established');
 
     app.listen(process.env.PORT || config.app.port, () => {
         console.log('Server started at localhost:'+(process.env.PORT || config.app.port));
