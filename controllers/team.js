@@ -21,7 +21,7 @@ function saveTeam(req, res) {
             } else {
                 if (teamStored) {
                     res.status(200).send({
-                        message: teamStored
+                        team: teamStored
                     })
                 } else {
                     res.status(200).send({
