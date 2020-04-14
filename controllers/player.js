@@ -26,7 +26,7 @@ function getPlayer(req, res){
     var playerId = req.params.id;
     var searchBy;
 
-    if (playerId.length < 8 || playerId.length > 8 && playerId.length < 18 || playerId.length.length > 18) {
+    if (!(playerId.length != 8 || playerId.length != 18)) {
         res.status(500).send({
             message: 'Incorrect ID format'
         })
