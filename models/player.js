@@ -5,7 +5,7 @@ const generate = require('nanoid/generate');
 const config = require('./../config.json');
 var Schema = mongoose.Schema;
 
-mongoose.set('useCreateIndex', true)
+mongoose.set('useCreateIndex', true);
 
 var PlayerSchema = Schema({
     player_id: {
