@@ -7,18 +7,32 @@ var Schema = mongoose.Schema;
 
 mongoose.set('useCreateIndex', true);
 
+var dateYMD = new Date().toISOString().split('T')[0];
+
 var WarSchema = Schema({
     war_id: {
         type: String,
         default: () => generate(config.nanoid.alphabet, config.nanoid.id_length),
         unique: true
     },
-    played_at: Date,
-    game: {
-        name: String,
-        mode: String
+    played_at: {
+        type: Date,
+        default: dateYMD // Date.now
     },
-    type: String,
+    game: {
+        name: {
+            type: String,
+            default: "MK8D"
+        },
+        mode: {
+            type: String,
+            default: "150cc"
+        }
+    },
+    type: {
+        type: String,
+        default: "friendly"
+    },
     tags: Array,
     results: [{
         team: String,
