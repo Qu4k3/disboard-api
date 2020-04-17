@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://'+db_user+':'+db_pass+'@'+db_cluster+'/'+db_name
     console.log('Connection to database established');
 
     app.listen(process.env.PORT || config.app.port, () => {
-        console.log('Server started at localhost:'+(process.env.PORT || config.app.port));
+        console.log(`Server started at localhost:${process.env.PORT || config.app.port}`);
     });
 }).catch(err => console.log(err));
 
