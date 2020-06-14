@@ -7,12 +7,14 @@ function savePlayer(req, res) {
 
   var params = req.body;
 
-  if (params.name && params.team && params.country_code) {
+  if (params.name && params.team && params.country_code && params.discord_id) {
     player.player_name = params.name;
     player.player_team = params.team;
     player.country.code = params.country_code;
     player.switch_fc = params.switch_fc;
     player.mkc_player_profile = params.mkc_profile;
+    player.discord.unique_id = params.discord_id;
+    player.discord.roles = params.discord_roles;
 
     player.save((err, playerStored) => {
       if (err) {
