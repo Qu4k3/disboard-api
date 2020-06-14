@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const redirect = encodeURIComponent('https://api.disboard.team/discord/callback');
+const redirect = encodeURIComponent('http://localhost:3800/discord/callback');
 
 var api = express.Router();
 
@@ -20,7 +20,7 @@ api.get('/callback', catchAsync(async (req, res) => {
     if (!req.query.code) throw new Error('NoCodeProvided');
     const code = req.query.code;
     const creds = btoa(`${CLIENT_ID}:${CLIENT_SECRET}`);
-    const response = await fetch(`https://discord.com/api/oauth2/token?grant_type=authorization_code&code=${code}&redirect_uri=${redirect}`, {
+    const response = await fetch(`https://discordapp.com/api/oauth2/token?grant_type=authorization_code&code=${code}&redirect_uri=${redirect}`, {
         method: 'POST',
         headers: {
             Authorization: `Basic ${creds}`,
