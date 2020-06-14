@@ -30,8 +30,8 @@ var PlayerSchema = Schema({
         unique_id: String,
         roles:[
             {
-                role: String,
-                role_color: String
+                role: { type: String, default: "Imanity" },
+                role_color: { type: String, default: "#3498db" }
             }
         ]
     },
