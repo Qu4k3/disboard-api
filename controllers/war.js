@@ -9,6 +9,9 @@ function saveWar(req, res) {
 
     if(params.results){
 
+        war.played_at = params.played_at;
+        war.results = params.results;
+
         war.save(params, (err, warStored) => {
             if(err){
                 res.status(500).send({
