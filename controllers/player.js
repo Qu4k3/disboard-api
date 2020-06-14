@@ -15,6 +15,7 @@ function savePlayer(req, res) {
     player.mkc_player_profile = params.mkc_profile;
     player.discord.unique_id = params.discord_id;
     player.discord.roles = params.discord_roles;
+    player.player_registry.in = params.player_registry_in;
 
     player.save((err, playerStored) => {
       if (err) {
