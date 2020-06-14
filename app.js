@@ -21,14 +21,14 @@ app.use(bodyParser.json());
 // Add headers
 app.use(function (req, res, next) {  
   // Website you wish to allow to connect
-  var allowedOrigins = ['http://127.0.0.1:5500', 'http://localhost:3800'];
+  var allowedOrigins = ['https://dev.disboard.team', 'https://disboard.team', 'http://localhost:3800', 'http://127.0.0.1:5500'];
   var origin = req.headers.origin;
   if(allowedOrigins.indexOf(origin) > -1){
     res.setHeader('Access-Control-Allow-Origin', origin);
   }
   //res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
   // Request methods you wish to allow
-  res.setHeader('Access-Control-Allow-Methods', 'GET'); // GET, POST, OPTIONS, PUT, PATCH, DELETE
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // GET, POST, OPTIONS, PUT, PATCH, DELETE
   // Request headers you wish to allow
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
   // Set to true if you need the website to include cookies in the requests sent
