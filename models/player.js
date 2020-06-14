@@ -28,8 +28,6 @@ var PlayerSchema = Schema({
     ],
     discord: {
         unique_id: String,
-        user_tag: String,
-        avatar_url: String,
         roles:[
             {
                 role: String,
