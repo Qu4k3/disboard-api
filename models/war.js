@@ -40,7 +40,7 @@ var WarSchema = Schema({
         score: Number,
         penality: Number,
         players: [{
-            player: String,
+            player: Schema.Types.Mixed,
             score: Number
         }]
     }]
