@@ -36,7 +36,11 @@ var PlayerSchema = Schema({
         ]
     },
     switch_fc: String,
-    mkc_player_profile: String
+    mkc_player_profile: String,
+    mkc_avatar_url: {
+        type: String,
+        default: "https://www.mariokartcentral.com/mkc/images/icons/profile_picture_default.png"
+    }
 });
 
 module.exports = mongoose.model('Player', PlayerSchema);
