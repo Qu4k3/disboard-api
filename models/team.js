@@ -15,7 +15,10 @@ var TeamSchema = Schema({
     },
     team_name: String,
     team_tag: String,
-    team_logo: String,
+    team_logo: {
+        type: String,
+        default: "https://www.mariokartcentral.com/mkc/images/icons/profile_picture_default.png"
+    },
     mkc_team_profile: String
 });
 
